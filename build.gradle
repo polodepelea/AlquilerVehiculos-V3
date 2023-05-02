@@ -1,0 +1,28 @@
+plugins {   
+    // Aplicación
+    id 'application'
+    
+    // JavaFX
+    id 'org.openjfx.javafxplugin' version '0.0.13'
+}
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "17"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.web' ]
+}
+
+mainClassName = 'javafx.MainApp'
+
+jar {
+	duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+	manifest {
+		attributes 'Main-Class': 'javafx.LanzadorMainApp'
+	}
+	from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}
