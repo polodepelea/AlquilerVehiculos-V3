@@ -5,8 +5,11 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
+import org.iesalandalus.programacion.alquilervehiculos.vista.grafica.VistaGrafica;
 import org.iesalandalus.programacion.alquilervehiculos.vista.grafica.recursos.LocalizadorRecursos;
 import org.iesalandalus.programacion.alquilervehiculos.vista.grafica.utilidades.Controladores;
+import org.iesalandalus.programacion.alquilervehiculos.vista.grafica.utilidades.Dialogos;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -14,6 +17,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
@@ -39,6 +43,9 @@ public class VentanaPrincipal extends Controlador {
 	private BorderPane bp;
 	@FXML
 	private AnchorPane ap;
+	
+	
+
 
 	@FXML
 	private void home() {
@@ -47,10 +54,23 @@ public class VentanaPrincipal extends Controlador {
 	}
 
 	@FXML
-	void page1(ActionEvent event) {
+	void page1() {
 		cargarPagina("page1");
 
 	}
+	
+	@FXML
+	void buscarCliente() {
+		cargarPagina("buscarCliente");
+
+	}
+	
+	@FXML
+	void modificarCliente() {
+		cargarPagina("modificarCliente");
+
+	}
+
 
 	private void cargarPagina(String page) {
 		Parent root = null;
@@ -62,6 +82,24 @@ public class VentanaPrincipal extends Controlador {
 		}
 
 		bp.setCenter(root);
+	}
+	
+	@FXML
+	private VistaGrafica vistagrafica = VistaGrafica.getInstancia();
+	
+	@FXML
+	private TextField dni;
+	
+	
+	@FXML
+	private void comprobarCliente() {
+		
+		if(vistagrafica.getControlador().buscar(Cliente.getClienteConDni(dni.getText()))==null) {
+			Dialogos.mostrarDialogoInformacion("Erdor","El cliente no existe" , getEscenario());
+		}
+		else {
+			modificarCliente();
+		}
 	}
 
 }

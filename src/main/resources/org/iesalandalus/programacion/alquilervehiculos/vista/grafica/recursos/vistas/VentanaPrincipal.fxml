@@ -3,6 +3,9 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -34,7 +37,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Buscar" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#buscarCliente" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Buscar" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -196,4 +199,25 @@
          </children>
       </AnchorPane>
    </center>
+   <top>
+      <MenuBar style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" style="-fx-color: black;" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" style="-fx-color: white;" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" style="-fx-color: black;" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" style="-fx-color: white;" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" style="-fx-color: black;" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" style="-fx-color: white;" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
 </BorderPane>
