@@ -65,11 +65,6 @@ public class VentanaPrincipal extends Controlador {
 
 	}
 	
-	@FXML
-	void modificarCliente() {
-		cargarPagina("modificarCliente");
-
-	}
 
 
 	private void cargarPagina(String page) {
@@ -84,22 +79,5 @@ public class VentanaPrincipal extends Controlador {
 		bp.setCenter(root);
 	}
 	
-	@FXML
-	private VistaGrafica vistagrafica = VistaGrafica.getInstancia();
-	
-	@FXML
-	private TextField dni;
-	
-	
-	@FXML
-	private void comprobarCliente() {
-		
-		if(vistagrafica.getControlador().buscar(Cliente.getClienteConDni(dni.getText()))==null) {
-			Dialogos.mostrarDialogoInformacion("Erdor","El cliente no existe" , getEscenario());
-		}
-		else {
-			modificarCliente();
-		}
-	}
 
 }
