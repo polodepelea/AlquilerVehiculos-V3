@@ -7,16 +7,17 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="574.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaClientes">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="574.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ModificarCliente">
    <children>
       <ImageView fitHeight="49.0" fitWidth="54.0" layoutX="263.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/usuario.png" />
          </image>
       </ImageView>
-      <TextField fx:id="dni" layoutX="263.0" layoutY="224.0" prefHeight="49.0" prefWidth="263.0" promptText="DNI" style="-fx-background-color: #404040;" />
+      <TextField fx:id="nombre" layoutX="263.0" layoutY="224.0" prefHeight="49.0" prefWidth="263.0" promptText="nombre" style="-fx-background-color: #404040;" />
       <TextField fx:id="telefono" layoutX="263.0" layoutY="309.0" prefHeight="49.0" prefWidth="263.0" promptText="Telefono" style="-fx-background-color: #404040;" />
-      <Button layoutX="269.0" layoutY="401.0" mnemonicParsing="false" onAction="#insertarCliente" prefHeight="43.0" prefWidth="84.0" text="Button" />
+      <Button layoutX="269.0" layoutY="401.0" mnemonicParsing="false" onAction="#mofificarCliente" prefHeight="43.0" prefWidth="84.0" text="Modificar" />
       <Text layoutX="130.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="modificatr" wrappingWidth="311.888671875" />
+      <Button layoutX="425.0" layoutY="410.0" mnemonicParsing="false" onAction="#borrarCliente" text="Borrar" />
    </children>
 </Pane>

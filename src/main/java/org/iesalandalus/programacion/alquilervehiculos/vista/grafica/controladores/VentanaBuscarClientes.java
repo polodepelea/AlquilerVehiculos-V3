@@ -12,43 +12,53 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.control.TextField;
+import javafx.scene.control.TextInputControl;
 import javafx.scene.layout.BorderPane;
 
-public class VentanaBuscarClientes extends Controlador{
+public class VentanaBuscarClientes extends Controlador {
 	
+	public static String dniValue = "";
+
 	@FXML
 	private VistaGrafica vistagrafica = VistaGrafica.getInstancia();
-	
+
 	@FXML
 	private TextField dni;
-	
+
 	@FXML
 	private BorderPane bp;
 	
 	
-	
-	
 	@FXML
-	private void comprobarCliente() throws IOException {
-		
-		if(vistagrafica.getControlador().buscar(Cliente.getClienteConDni(dni.getText()))==null) {
-			Dialogos.mostrarDialogoInformacion("Erdor","El cliente no existe" , getEscenario());
-		}
-		else {
-			
-			Parent root = null;
-			try {
-				root = FXMLLoader.load(LocalizadorRecursos.class.getResource("vistas/modificarCliente.fxml"));
-			} catch (IOException e) {
-				Dialogos.mostrarDialogoInformacion("Erdor","El cliente no existe" , getEscenario());
-			}
+	public String getDniValue() {
+	    return dni.getText();
+	}
 
-			bp.setCenter(root);
-			
-		   
+	@FXML
+	private void comprobarCliente() {
+
+		try {
+			if (vistagrafica.getControlador().buscar(Cliente.getClienteConDni(dni.getText())) == null) {
+				
+				Dialogos.mostrarDialogoInformacion("Error", "El cliente no existe", getEscenario());
+			} else {
+				
+				dniValue = dni.getText();
+				Parent root = null;
+				try {
+					
+					root = FXMLLoader.load(LocalizadorRecursos.class.getResource("vistas/modificarCliente.fxml"));
+				} catch (IOException e) {
+					Dialogos.mostrarDialogoInformacion("Error", "El bp a falldo", getEscenario());
+				}
+
+				bp.setCenter(root);
+
+			}
+		} catch (IllegalArgumentException e) {
+			Dialogos.mostrarDialogoError("Error", e.getMessage(), getEscenario());
 		}
 	}
-	
 	
 	
 
