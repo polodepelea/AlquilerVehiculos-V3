@@ -49,7 +49,7 @@
                   </ImageView>
                </graphic>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquileres" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#tablaClientes" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquileres" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>

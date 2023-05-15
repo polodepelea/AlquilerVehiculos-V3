@@ -22,6 +22,16 @@ public class ModificarCliente extends Controlador {
 
 	@FXML
 	private TextField telefono;
+	
+	@FXML
+	private void initialize() {
+
+		nombre.setText(Cliente.getClienteConDni(VentanaBuscarClientes.dniValue).getNombre());
+		
+		telefono.setText(Cliente.getClienteConDni(VentanaBuscarClientes.dniValue).getTelefono());
+		
+
+	}
 
 	@FXML
 	private void mofificarCliente() {

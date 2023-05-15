@@ -65,6 +65,14 @@ public class VentanaPrincipal extends Controlador {
 
 	}
 	
+	@FXML
+	void tablaClientes() {
+		cargarPagina("TablaClientes");
+
+	}
+	
+	
+	
 
 
 	private void cargarPagina(String page) {
