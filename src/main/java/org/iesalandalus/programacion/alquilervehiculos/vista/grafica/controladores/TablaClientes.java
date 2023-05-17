@@ -31,9 +31,9 @@ public class TablaClientes extends Controlador{
 	private TableColumn<Cliente, Integer> telefonoColumn;
 
 	public void initialize() {
-	    nombreColumn.setCellValueFactory(new PropertyValueFactory<Cliente, String>("nombre"));
-	    dniColumn.setCellValueFactory(new PropertyValueFactory<Cliente, Integer>("dni"));
-	    telefonoColumn.setCellValueFactory(new PropertyValueFactory<Cliente, Integer>("telefono"));
+	    nombreColumn.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+	    dniColumn.setCellValueFactory(new PropertyValueFactory<>("dni"));
+	    telefonoColumn.setCellValueFactory(new PropertyValueFactory<>("telefono"));
 
 	    List<Cliente> clientes = listarClientes();
 	  

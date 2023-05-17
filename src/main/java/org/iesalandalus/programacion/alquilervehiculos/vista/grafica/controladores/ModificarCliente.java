@@ -4,6 +4,7 @@ import javax.naming.OperationNotSupportedException;
 
 import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
 import org.iesalandalus.programacion.alquilervehiculos.vista.grafica.VistaGrafica;
+import org.iesalandalus.programacion.alquilervehiculos.vista.grafica.utilidades.Controladores;
 import org.iesalandalus.programacion.alquilervehiculos.vista.grafica.utilidades.Dialogos;
 
 import javafx.fxml.FXML;
@@ -55,5 +56,23 @@ public class ModificarCliente extends Controlador {
 		}
 		
 	}
+	
+	@FXML
+	private void botonAlquilar() {
+		ClienteAlquilar ventanaPrincipal = (ClienteAlquilar) Controladores.get("vistas/ClienteAlquilar.fxml", "", null);
+		ventanaPrincipal.getEscenario().show();
+	}
+	
+	@FXML
+	private void botonDevolver() {
+		ClienteDevolver ventanaPrincipal = (ClienteDevolver) Controladores.get("vistas/ClienteDevolver.fxml", "", null);
+		ventanaPrincipal.getEscenario().show();
+	}
+	
+	
 
+
+{
+	
+}
 }

@@ -71,6 +71,12 @@ public class VentanaPrincipal extends Controlador {
 
 	}
 	
+	@FXML
+	void elegirVehiculo() {
+		cargarPagina("ElegirVehiculo");
+
+	}
+	
 	
 	
 
@@ -80,7 +86,6 @@ public class VentanaPrincipal extends Controlador {
 		try {
 			root = FXMLLoader.load(LocalizadorRecursos.class.getResource("vistas/" + page + ".fxml"));
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

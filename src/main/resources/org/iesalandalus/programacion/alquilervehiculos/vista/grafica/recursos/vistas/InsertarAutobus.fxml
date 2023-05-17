@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="574.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.InsertarAutobus">
+   <children>
+      <ImageView fitHeight="49.0" fitWidth="54.0" layoutX="263.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/usuario.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="plazas" layoutX="263.0" layoutY="140.0" prefHeight="49.0" prefWidth="263.0" promptText="plazas" style="-fx-background-color: #404040;" />
+      <TextField fx:id="matricula" layoutX="263.0" layoutY="224.0" prefHeight="49.0" prefWidth="263.0" promptText="matricula" style="-fx-background-color: #404040;" />
+      <TextField fx:id="marca" layoutX="263.0" layoutY="309.0" prefHeight="49.0" prefWidth="263.0" promptText="marca" style="-fx-background-color: #404040;" />
+      <Button layoutX="269.0" layoutY="401.0" mnemonicParsing="false" onAction="#insertarAutobus" prefHeight="43.0" prefWidth="84.0" text="Button" />
+      <TextField fx:id="modelo" layoutX="-4.0" layoutY="309.0" prefHeight="49.0" prefWidth="263.0" promptText="modelo" style="-fx-background-color: #404040;" />
+      <Text fill="#d76767" layoutX="414.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="autobuses" wrappingWidth="102.39450073242188" />
+   </children>
+</Pane>
