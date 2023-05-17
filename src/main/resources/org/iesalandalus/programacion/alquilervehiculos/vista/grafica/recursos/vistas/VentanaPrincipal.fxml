@@ -10,11 +10,11 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<BorderPane fx:id="bp" prefHeight="517.0" prefWidth="777.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaPrincipal">
+<BorderPane fx:id="bp" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaPrincipal">
    <left>
       <VBox prefHeight="517.0" prefWidth="203.0" style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
          <children>
@@ -23,33 +23,42 @@
                   <Insets />
                </opaqueInsets>
                <padding>
-                  <Insets bottom="5.0" left="7.0" />
-               </padding></Label>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#page1" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Insertar" textFill="WHITE">
+                  <Insets bottom="5.0" left="7.0" top="6.0" />
+               </padding>
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#page1" prefHeight="31.0" prefWidth="207.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Insertar" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../imagenes/usuario.png" />
+                        <Image url="@../imagenes/agregar-usuario%20(2).png" />
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#buscarCliente" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Buscar" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#buscarCliente" prefHeight="31.0" prefWidth="207.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Buscar" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../imagenes/usuario.png" />
+                        <Image url="@../imagenes/busqueda%20(1).png" />
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#tablaClientes" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquileres" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#tablaClientes" prefHeight="31.0" prefWidth="217.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquileres" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -60,8 +69,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Listar" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="223.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Listar" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -72,12 +84,18 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
             <Label prefHeight="17.0" prefWidth="143.0" text="Vehiculos" textFill="#b2afaf">
                <padding>
                   <Insets left="7.0" top="5.0" />
-               </padding></Label>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#elegirVehiculo" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Insertar" textFill="WHITE">
+               </padding>
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#elegirVehiculo" prefHeight="31.0" prefWidth="232.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Insertar" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -88,8 +106,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Buscar" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="219.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Buscar" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -100,8 +121,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquileres" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="227.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquileres" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -112,8 +136,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Listar" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="215.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Listar" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -124,12 +151,18 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
             <Label prefHeight="17.0" prefWidth="143.0" text="Alquiler" textFill="#b2afaf">
                <padding>
                   <Insets left="7.0" top="5.0" />
-               </padding></Label>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquiler" textFill="WHITE">
+               </padding>
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="201.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquiler" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -140,8 +173,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquiler" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="247.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquiler" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -152,8 +188,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquiler" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="235.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquiler" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -164,8 +203,11 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="25.0" prefWidth="136.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquiler" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="35.0" prefWidth="241.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquiler" textFill="WHITE">
                <padding>
                   <Insets bottom="10.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -176,26 +218,30 @@
                      </image>
                   </ImageView>
                </graphic>
+               <font>
+                  <Font size="13.0" />
+               </font>
             </Button>
-            <ImageView fitHeight="57.0" fitWidth="65.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../imagenes/usuario.png" />
-               </image>
-               <VBox.margin>
-                  <Insets left="7.0" />
-               </VBox.margin>
-            </ImageView>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <ImageView fitHeight="57.0" fitWidth="65.0" layoutX="23.0" layoutY="14.0" onMouseClicked="#home" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imagenes/casa-en-blanco%20(1).png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
          </children>
       </VBox>
    </left>
    <center>
       <AnchorPane fx:id="ap" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
          <children>
-            <Text fill="WHITE" layoutX="194.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hola" wrappingWidth="110.169921875">
-               <font>
-                  <Font size="60.0" />
-               </font>
-            </Text>
+            <ImageView fitHeight="512.0" fitWidth="512.0" layoutX="92.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/radar-grafico.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </center>

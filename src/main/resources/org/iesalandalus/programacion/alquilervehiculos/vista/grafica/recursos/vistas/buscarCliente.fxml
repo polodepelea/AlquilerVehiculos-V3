@@ -2,16 +2,22 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 
-
-<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaBuscarClientes">
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaBuscarClientes">
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="575.0" prefWidth="697.0" style="-fx-background-color: #1E1E1E;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="425.0" layoutY="334.0" mnemonicParsing="false" onAction="#comprobarCliente" text="Button" />
-            <TextField fx:id="dni" layoutX="300.0" layoutY="121.0" />
+            <Button layoutX="349.0" layoutY="324.0" mnemonicParsing="false" onAction="#comprobarCliente" prefHeight="26.0" prefWidth="59.0" text="Buscar" />
+            <TextField fx:id="dni" layoutX="344.0" layoutY="232.0" prefHeight="37.0" prefWidth="204.0" promptText="DNI                                               🔎" style="-fx-background-color: #404040; -fx-text-fill: #BFBFBF;" />
+            <ImageView fitHeight="155.0" fitWidth="159.0" layoutX="71.0" layoutY="210.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imagenes/busqueda.png" />
+               </image>
+            </ImageView>
          </children>
       </AnchorPane>
    </center>
