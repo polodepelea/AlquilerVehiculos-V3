@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.OpcionesVehiculo">
+   <children>
+      <TextField fx:id="matricula" layoutX="52.0" layoutY="49.0" />
+      <TextField fx:id="modelo" layoutX="243.0" layoutY="61.0" />
+      <TextField fx:id="marca" layoutX="93.0" layoutY="137.0" />
+      <Button layoutX="444.0" layoutY="313.0" mnemonicParsing="false" onAction="#borrarVehiculo" text="Borrar" />
+      <TextField fx:id="cilindrada" layoutX="318.0" layoutY="150.0" />
+      <TextField fx:id="plazas" layoutX="59.0" layoutY="231.0" />
+      <TextField fx:id="pma" layoutX="281.0" layoutY="231.0" />
+      <TextField fx:id="tipo" layoutX="430.0" layoutY="48.0" />
+      <Button layoutX="341.0" layoutY="313.0" mnemonicParsing="false" onAction="#botonAlquilar" text="Button" />
+      <Button layoutX="182.0" layoutY="325.0" mnemonicParsing="false" onAction="#botonDevolver" text="devolver" />
+   </children>
+</Pane>

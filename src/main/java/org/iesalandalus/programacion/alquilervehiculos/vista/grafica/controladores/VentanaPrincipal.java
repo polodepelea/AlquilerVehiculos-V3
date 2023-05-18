@@ -77,6 +77,20 @@ public class VentanaPrincipal extends Controlador {
 
 	}
 	
+	@FXML
+	void buscarVehiculo() {
+		cargarPagina("buscarVehiculo");
+
+	}
+	
+	@FXML
+	void elegirVehiculo2() {
+		cargarPagina("ElegirVehiculo2");
+
+	}
+	
+	
+	
 	
 	
 

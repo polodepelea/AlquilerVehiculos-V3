@@ -16,9 +16,9 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.TextInputControl;
 import javafx.scene.layout.BorderPane;
 
-public class VentanaBuscarVehiculos extends Controlador {
+public class VentanaBuscarVehiculo extends Controlador {
 	
-	public static String matrciculaValue = "";
+	public static String matriculaValue = "";
 
 	@FXML
 	private VistaGrafica vistagrafica = VistaGrafica.getInstancia();
@@ -36,19 +36,19 @@ public class VentanaBuscarVehiculos extends Controlador {
 	}
 
 	@FXML
-	private void comprobarCliente() {
+	private void comprobarVehiculo() {
 
 		try {
 			if (vistagrafica.getControlador().buscar(Vehiculo.getVehiculoConMatricula(matricula.getText())) == null) {
 				
-				Dialogos.mostrarDialogoInformacion("Error", "El cliente no existe", getEscenario());
+				Dialogos.mostrarDialogoInformacion("Error", "El vehiculo no existe", getEscenario());
 			} else {
 				
-				matrciculaValue = matricula.getText();
+				matriculaValue = matricula.getText();
 				Parent root = null;
 				try {
 					
-					root = FXMLLoader.load(LocalizadorRecursos.class.getResource("vistas/modificarCliente.fxml"));
+					root = FXMLLoader.load(LocalizadorRecursos.class.getResource("vistas/OpcionesVehiculo.fxml"));
 				} catch (IOException e) {
 					Dialogos.mostrarDialogoInformacion("Error", "El bp a falldo", getEscenario());
 				}

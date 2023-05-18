@@ -58,29 +58,14 @@
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#tablaClientes" prefHeight="31.0" prefWidth="217.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquileres" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#tablaClientes" prefHeight="31.0" prefWidth="217.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Listar" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
                <graphic>
                   <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../imagenes/usuario.png" />
-                     </image>
-                  </ImageView>
-               </graphic>
-               <font>
-                  <Font size="13.0" />
-               </font>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="223.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Listar" textFill="WHITE">
-               <padding>
-                  <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
-               </padding>
-               <graphic>
-                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../imagenes/usuario.png" />
+                        <Image url="@../imagenes/lista.png" />
                      </image>
                   </ImageView>
                </graphic>
@@ -110,7 +95,7 @@
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="219.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Buscar" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#buscarVehiculo" prefHeight="31.0" prefWidth="219.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Buscar" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>
@@ -125,7 +110,7 @@
                   <Font size="13.0" />
                </font>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="227.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquileres" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#elegirVehiculo2" prefHeight="31.0" prefWidth="227.0" stylesheets="@../estilos/VentanaPrincipal.css" text="Alquileres" textFill="WHITE">
                <padding>
                   <Insets bottom="5.0" left="7.0" right="5.0" top="5.0" />
                </padding>

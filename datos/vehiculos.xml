@@ -3,6 +3,6 @@
     <vehiculo marca="Scania" matricula="1234BCD" modelo="Citywide" plazas="60" tipo="autobus"/>
     <vehiculo cilindrada="1100" marca="Seat" matricula="1111BBB" modelo="León" tipo="turismo"/>
     <vehiculo cilindrada="1300" marca="Renault" matricula="2222CCC" modelo="Megane" tipo="turismo"/>
-    <vehiculo marca="Mercedes-Benz" matricula="3333DDD" modelo="eSprinter" plazas="2" pma="7000" tipo="furgoneta"/>
     <vehiculo marca="Mikele" matricula="1234ZZZ" modelo="mikele" plazas="10" tipo="autobus"/>
+    <vehiculo marca="Seat" matricula="4321SXF" modelo="Mikel" plazas="4" pma="500" tipo="furgoneta"/>
 </vehiculos>
