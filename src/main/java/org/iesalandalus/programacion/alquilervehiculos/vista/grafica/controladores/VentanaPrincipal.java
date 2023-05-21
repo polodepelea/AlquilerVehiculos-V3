@@ -99,6 +99,12 @@ public class VentanaPrincipal extends Controlador {
 		cargarPagina("Estadisticas");
 
 	}
+	
+	@FXML
+	void help() {
+		cargarPagina("help");
+
+	}
 
 	private void cargarPagina(String page) {
 		Parent root = null;

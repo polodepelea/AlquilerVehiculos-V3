@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="697.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaClientes">
+   <children>
+      <ImageView fitHeight="190.0" fitWidth="276.0" layoutX="51.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/1684681393635.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="242.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Este proyecto es un sistema de alquiler de vehículos que permite a los usuarios rentar diferentes tipos de automóviles según sus necesidades.El objetivo de este proyecto es proporcionar una plataforma fácil de usar para que los usuarios puedan buscar, reservar y gestionar el alquiler de vehículos. El sistema ofrece una variedad de opciones de turismos, furgonetas y autobuses permitiendo a los usuarios seleccionar el vehículo adecuado para sus necesidades." wrappingWidth="414.13671875" />
+      <Text fill="WHITE" layoutX="242.0" layoutY="339.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Realizado por Lenny Lopez Perez." />
+   </children>
+</Pane>

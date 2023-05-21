@@ -226,19 +226,9 @@
    <top>
       <MenuBar style="-fx-background-color: #282828;" BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" style="-fx-color: black;" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" style="-fx-color: white;" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" style="-fx-color: black;" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" style="-fx-color: white;" text="Delete" />
-            </items>
-          </Menu>
           <Menu mnemonicParsing="false" style="-fx-color: black;" text="Help">
             <items>
-              <MenuItem mnemonicParsing="false" style="-fx-color: white;" text="About" />
+              <MenuItem mnemonicParsing="false" onAction="#help" style="-fx-color: white;" text="About" />
             </items>
           </Menu>
         </menus>

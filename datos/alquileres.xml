@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <alquileres>
     <alquiler cliente="69336021Z" fechaAlquiler="16/05/2023" fechaDevolucion="20/05/2023" vehiculo="4321SXF"/>
+    <alquiler cliente="00059087T" fechaAlquiler="16/05/2023" vehiculo="4321ZZZ"/>
 </alquileres>
