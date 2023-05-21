@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="697.0" style="-fx-background-color: #1E1E1E; -fx-text-fill: #FFFFFF;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.TablaAlquilerVehiculo">
+   <children>
+      <TableView fx:id="tableView" layoutX="27.0" layoutY="87.0" prefHeight="402.0" prefWidth="644.0" style="-fx-base: #404040;">
+        <columns>
+          <TableColumn fx:id="cliente" prefWidth="202.0" text="Cliente" />
+          <TableColumn fx:id="vehiculo" prefWidth="190.0" text="Vehiculo" />
+            <TableColumn fx:id="fechaAlquiler" prefWidth="136.0" text="FechaAlquiler" />
+            <TableColumn fx:id="fechaDevolucion" prefWidth="115.0" text="FechaDevolucion" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>

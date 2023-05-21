@@ -5,4 +5,5 @@
     <vehiculo cilindrada="1300" marca="Renault" matricula="2222CCC" modelo="Megane" tipo="turismo"/>
     <vehiculo marca="Mikele" matricula="1234ZZZ" modelo="mikele" plazas="10" tipo="autobus"/>
     <vehiculo marca="Seat" matricula="4321SXF" modelo="Mikel" plazas="4" pma="500" tipo="furgoneta"/>
+    <vehiculo marca="Toyota" matricula="1234ZZS" modelo="juan" plazas="16" tipo="autobus"/>
 </vehiculos>

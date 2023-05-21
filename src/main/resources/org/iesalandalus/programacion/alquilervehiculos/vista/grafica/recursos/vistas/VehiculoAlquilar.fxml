@@ -5,10 +5,10 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VehiculoAlquilar">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VehiculoAlquilar">
    <children>
-      <TextField fx:id="dni" layoutX="283.0" layoutY="77.0" />
-      <DatePicker fx:id="fecha" layoutX="271.0" layoutY="188.0" />
-      <Button layoutX="72.0" layoutY="299.0" mnemonicParsing="false" onAction="#alquilarCliente" prefHeight="25.0" prefWidth="63.0" text="Button" />
+      <DatePicker fx:id="fecha" layoutX="173.0" layoutY="187.0" prefHeight="49.0" prefWidth="263.0" promptText="Fecha Alquiler" />
+      <Button layoutX="269.0" layoutY="286.0" mnemonicParsing="false" onAction="#alquilarCliente" prefHeight="25.0" prefWidth="63.0" text="Button" />
+      <TextField fx:id="dni" layoutX="169.0" layoutY="104.0" prefHeight="49.0" prefWidth="263.0" promptText="Dni" style="-fx-background-color: #404040; -fx-text-fill: #BFBFBF;" />
    </children>
 </Pane>

@@ -8,15 +8,10 @@
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="697.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VentanaClientes">
    <children>
-      <ImageView fitHeight="49.0" fitWidth="54.0" layoutX="263.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../imagenes/usuario.png" />
-         </image>
-      </ImageView>
       <TextField fx:id="nombre" layoutX="340.0" layoutY="127.0" prefHeight="49.0" prefWidth="263.0" promptText="Nombre" style="-fx-background-color: #404040; -fx-text-fill: #BFBFBF;" />
       <TextField fx:id="dni" layoutX="340.0" layoutY="213.0" prefHeight="49.0" prefWidth="263.0" promptText="DNI" style="-fx-background-color: #404040; -fx-text-fill: #BFBFBF;" />
       <TextField fx:id="telefono" layoutX="340.0" layoutY="304.0" prefHeight="49.0" prefWidth="263.0" promptText="Telefono" style="-fx-background-color: #404040; -fx-text-fill: #BFBFBF;" />
-      <Button layoutX="340.0" layoutY="424.0" mnemonicParsing="false" onAction="#insertarCliente" prefHeight="43.0" prefWidth="84.0" text="Button" />
+      <Button layoutX="340.0" layoutY="424.0" mnemonicParsing="false" onAction="#insertarCliente" prefHeight="43.0" prefWidth="84.0" text="Insertar" />
       <ImageView fitHeight="155.0" fitWidth="159.0" layoutX="95.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/agregar-usuario%20(3).png" />

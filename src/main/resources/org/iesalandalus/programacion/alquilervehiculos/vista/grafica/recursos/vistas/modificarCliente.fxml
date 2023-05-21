@@ -9,10 +9,10 @@
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="697.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.ModificarCliente">
    <children>
       <TextField fx:id="nombre" layoutX="318.0" layoutY="200.0" prefHeight="49.0" prefWidth="263.0" promptText="Nombre" style="-fx-background-color: #404040; -fx-text-fill: #BFBFBF;" />
-      <Button layoutX="437.0" layoutY="444.0" mnemonicParsing="false" onAction="#mofificarCliente" prefHeight="25.0" prefWidth="57.0" text="Modificar" />
-      <Button layoutX="532.0" layoutY="444.0" mnemonicParsing="false" onAction="#borrarCliente" text="Borrar" />
-      <Button layoutX="243.0" layoutY="444.0" mnemonicParsing="false" onAction="#botonAlquilar" text="Alquilar" />
-      <Button layoutX="337.0" layoutY="444.0" mnemonicParsing="false" onAction="#botonDevolver" text="devolver" />
+      <Button layoutX="474.0" layoutY="419.0" mnemonicParsing="false" onAction="#mofificarCliente" prefHeight="25.0" prefWidth="72.0" text="Modificar" />
+      <Button layoutX="557.0" layoutY="419.0" mnemonicParsing="false" onAction="#borrarCliente" text="Borrar" />
+      <Button layoutX="327.0" layoutY="419.0" mnemonicParsing="false" onAction="#botonAlquilar" text="Alquilar" />
+      <Button layoutX="397.0" layoutY="419.0" mnemonicParsing="false" onAction="#botonDevolver" text="Devolver" />
       <TextField fx:id="telefono" layoutX="318.0" layoutY="288.0" prefHeight="49.0" prefWidth="263.0" promptText="Telefono" style="-fx-background-color: #404040; -fx-text-fill: #BFBFBF;" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="57.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
          <image>

@@ -4,9 +4,9 @@
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VehiculoDevolver">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.VehiculoDevolver">
    <children>
-      <DatePicker fx:id="fecha" layoutX="271.0" layoutY="188.0" />
-      <Button layoutX="72.0" layoutY="299.0" mnemonicParsing="false" onAction="#devolverVehiculo" prefHeight="25.0" prefWidth="63.0" text="devolver" />
+      <DatePicker fx:id="fecha" layoutX="180.0" layoutY="145.0" prefHeight="37.0" prefWidth="240.0" promptText="Fecha Devolver" />
+      <Button layoutX="269.0" layoutY="246.0" mnemonicParsing="false" onAction="#devolverVehiculo" prefHeight="25.0" prefWidth="63.0" text="Devolver" />
    </children>
 </Pane>

@@ -31,6 +31,8 @@ public class Cliente {
 		return new Cliente("Juan", dni, "666666666");
 
 	}
+	
+	
 
 	public String getNombre() {
 		return nombre;
@@ -111,4 +113,8 @@ public class Cliente {
 	public String toString() {
 		return String.format("%s - %s (%s)", nombre, dni, telefono);
 	}
+
+	
+
+	
 }

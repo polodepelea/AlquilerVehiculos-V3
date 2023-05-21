@@ -13,7 +13,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 
-public class VentanaBuscarClientes extends Controlador {
+public class VentanaBuscarClientes2 extends Controlador {
 
     public static String dniValue = "";
 
@@ -23,12 +23,14 @@ public class VentanaBuscarClientes extends Controlador {
     private static final String ERROR_CLIENTE_NO_EXISTE = "El cliente no existe";
     private static final String ERROR_BP_FALLIDO = "El bp ha fallado";
 
+
     @FXML
     private TextField dni;
 
     @FXML
     private BorderPane bp;
 
+    @FXML
     public String getDniValue() {
         return dni.getText();
     }
@@ -40,18 +42,20 @@ public class VentanaBuscarClientes extends Controlador {
                 Dialogos.mostrarDialogoInformacion(ERROR_TITULO, ERROR_CLIENTE_NO_EXISTE, getEscenario());
             } else {
                 dniValue = dni.getText();
-                Parent root = null;
-                try {
-                    root = FXMLLoader.load(LocalizadorRecursos.class.getResource("vistas/modificarCliente.fxml"));
-                } catch (IOException e) {
-                    Dialogos.mostrarDialogoInformacion(ERROR_TITULO, ERROR_BP_FALLIDO, getEscenario());
-                }
-                bp.setCenter(root);
+                cargarTablaAlquilerCliente();
             }
         } catch (IllegalArgumentException e) {
             Dialogos.mostrarDialogoError(ERROR_TITULO, e.getMessage(), getEscenario());
         }
     }
-}
 
+    private void cargarTablaAlquilerCliente() {
+        try {
+            Parent root = FXMLLoader.load(LocalizadorRecursos.class.getResource("vistas/TablaAlquilerCliente.fxml"));
+            bp.setCenter(root);
+        } catch (IOException e) {
+            Dialogos.mostrarDialogoInformacion(ERROR_TITULO, ERROR_BP_FALLIDO, getEscenario());
+        }
+    }
+}
 

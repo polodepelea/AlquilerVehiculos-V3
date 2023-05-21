@@ -13,7 +13,7 @@ import javafx.scene.Parent;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 
-public class VentanaBuscarVehiculo extends Controlador {
+public class VentanaBuscarVehiculo2 extends Controlador {
 
     public static String matriculaValue = "";
 
@@ -41,19 +41,20 @@ public class VentanaBuscarVehiculo extends Controlador {
                 Dialogos.mostrarDialogoInformacion(ERROR_TITULO, ERROR_VEHICULO_NO_EXISTE, getEscenario());
             } else {
                 matriculaValue = matricula.getText();
-                cargarOpcionesVehiculo();
+                cargarTablaAlquilerVehiculo();
             }
         } catch (IllegalArgumentException e) {
             Dialogos.mostrarDialogoError(ERROR_TITULO, e.getMessage(), getEscenario());
         }
     }
 
-    private void cargarOpcionesVehiculo() {
+    private void cargarTablaAlquilerVehiculo() {
         try {
-            Parent root = FXMLLoader.load(LocalizadorRecursos.class.getResource("vistas/OpcionesVehiculo.fxml"));
+            Parent root = FXMLLoader.load(LocalizadorRecursos.class.getResource("vistas/TablaAlquilerVehiculo.fxml"));
             bp.setCenter(root);
         } catch (IOException e) {
             Dialogos.mostrarDialogoInformacion(ERROR_TITULO, ERROR_BP_FALLIDO, getEscenario());
         }
     }
 }
+

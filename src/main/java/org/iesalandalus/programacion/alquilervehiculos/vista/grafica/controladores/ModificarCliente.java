@@ -1,5 +1,7 @@
 package org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores;
 
+import java.util.List;
+
 import javax.naming.OperationNotSupportedException;
 
 import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
@@ -13,7 +15,6 @@ import javafx.scene.control.TextField;
 public class ModificarCliente extends Controlador {
 
 	VentanaBuscarClientes ventana = new VentanaBuscarClientes();
-	
 
 	@FXML
 	private VistaGrafica vistagrafica = VistaGrafica.getInstancia();
@@ -24,13 +25,24 @@ public class ModificarCliente extends Controlador {
 	@FXML
 	private TextField telefono;
 	
+	
 	@FXML
 	private void initialize() {
 
-		nombre.setText(Cliente.getClienteConDni(VentanaBuscarClientes.dniValue).getNombre());
-		
-		telefono.setText(Cliente.getClienteConDni(VentanaBuscarClientes.dniValue).getTelefono());
-		
+		List<Cliente> listaClientes = vistagrafica.getControlador().getClientes();
+		String dniBuscado = Cliente.getClienteConDni(VentanaBuscarClientes.dniValue).getDni();
+
+		Cliente clienteEncontrado = null;
+		for (Cliente cliente : listaClientes) {
+			if (cliente.getDni().equals(dniBuscado)) {
+				clienteEncontrado = cliente;
+				break;
+			}
+		}
+
+		nombre.setText(clienteEncontrado.getNombre());
+
+		telefono.setText(clienteEncontrado.getTelefono());
 
 	}
 
@@ -40,39 +52,36 @@ public class ModificarCliente extends Controlador {
 		try {
 			vistagrafica.getControlador().modificar(Cliente.getClienteConDni(VentanaBuscarClientes.dniValue),
 					nombre.getText(), telefono.getText());
-		} catch (OperationNotSupportedException e) {
-			Dialogos.mostrarDialogoError("Erroe", e.getMessage(), getEscenario());
+			Dialogos.mostrarDialogoInformacion("Informacion", "Cliente modificado correctamente", getEscenario());
+
+		} catch (OperationNotSupportedException | IllegalArgumentException e) {
+			Dialogos.mostrarDialogoError("Error", e.getMessage(), getEscenario());
 		}
 
 	}
-	
-	
+
 	@FXML
 	private void borrarCliente() {
 		try {
 			vistagrafica.getControlador().borrar(Cliente.getClienteConDni(VentanaBuscarClientes.dniValue));
-		} catch (OperationNotSupportedException e) {
-			Dialogos.mostrarDialogoError("Erroe", e.getMessage(), getEscenario());
+			Dialogos.mostrarDialogoInformacion("Informacion", "Cliente borrado correctamente", getEscenario());
+		} catch (OperationNotSupportedException | IllegalArgumentException e) {
+			Dialogos.mostrarDialogoError("Error", e.getMessage(), getEscenario());
 		}
-		
+
 	}
-	
+
 	@FXML
 	private void botonAlquilar() {
 		ClienteAlquilar ventanaPrincipal = (ClienteAlquilar) Controladores.get("vistas/ClienteAlquilar.fxml", "", null);
 		ventanaPrincipal.getEscenario().show();
 	}
-	
+
 	@FXML
 	private void botonDevolver() {
 		ClienteDevolver ventanaPrincipal = (ClienteDevolver) Controladores.get("vistas/ClienteDevolver.fxml", "", null);
 		ventanaPrincipal.getEscenario().show();
 	}
-	
-	
 
-
-{
 	
-}
 }

@@ -1,6 +1,6 @@
 package org.iesalandalus.programacion.alquilervehiculos.vista.grafica;
 
-import org.iesalandalus.programacion.alquilervehiculos.modelo.dominio.Cliente;
+
 import org.iesalandalus.programacion.alquilervehiculos.vista.Vista;
 
 public class VistaGrafica extends Vista{

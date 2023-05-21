@@ -13,10 +13,9 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
 
 public class VehiculoAlquilar extends Controlador {
-	
+
 	VentanaBuscarClientes ventana = new VentanaBuscarClientes();
-	
-	@FXML
+
 	private VistaGrafica vistagrafica = VistaGrafica.getInstancia();
 
 	@FXML
@@ -24,15 +23,17 @@ public class VehiculoAlquilar extends Controlador {
 
 	@FXML
 	private DatePicker fecha;
-	
+
 	@FXML
 	private void alquilarCliente() {
 		try {
-			vistagrafica.getControlador().insertar(new Alquiler (Cliente.getClienteConDni(dni.getText()),Vehiculo.getVehiculoConMatricula(VentanaBuscarVehiculo.matriculaValue), fecha.getValue()));
-		} catch (OperationNotSupportedException e) {
-			Dialogos.mostrarDialogoError("Erroe", e.getMessage(), getEscenario());
+			vistagrafica.getControlador().insertar(new Alquiler(Cliente.getClienteConDni(dni.getText()),
+					Vehiculo.getVehiculoConMatricula(VentanaBuscarVehiculo.matriculaValue), fecha.getValue()));
+			Dialogos.mostrarDialogoInformacion("Informacion", "Alquiler creado correctamente", getEscenario());
+		} catch (OperationNotSupportedException | IllegalArgumentException e) {
+			Dialogos.mostrarDialogoError("Error", e.getMessage(), getEscenario());
 		}
-		
+
 	}
 
 }

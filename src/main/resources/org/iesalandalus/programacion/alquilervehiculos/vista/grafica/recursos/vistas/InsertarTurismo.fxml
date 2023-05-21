@@ -5,21 +5,18 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="574.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.InsertarFurgoneta">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="697.0" style="-fx-background-color: #1E1E1E;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.alquilervehiculos.vista.grafica.controladores.InsertarTurismo">
    <children>
-      <ImageView fitHeight="49.0" fitWidth="54.0" layoutX="263.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+      <TextField fx:id="cilindrada" layoutX="347.0" layoutY="128.0" prefHeight="49.0" prefWidth="263.0" promptText="Cilindrada" style="-fx-background-color: #404040;" />
+      <TextField fx:id="matricula" layoutX="347.0" layoutY="202.0" prefHeight="49.0" prefWidth="263.0" promptText="Matricula" style="-fx-background-color: #404040;" />
+      <TextField fx:id="marca" layoutX="347.0" layoutY="274.0" prefHeight="49.0" prefWidth="263.0" promptText="Marca" style="-fx-background-color: #404040;" />
+      <Button layoutX="347.0" layoutY="424.0" mnemonicParsing="false" onAction="#insertarTurismo" prefHeight="43.0" prefWidth="84.0" text="Insertar" />
+      <TextField fx:id="modelo" layoutX="347.0" layoutY="348.0" prefHeight="49.0" prefWidth="263.0" promptText="Modelo" style="-fx-background-color: #404040;" />
+      <ImageView fitHeight="180.0" fitWidth="185.0" layoutX="64.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../imagenes/usuario.png" />
+            <Image url="@../imagenes/coche.png" />
          </image>
       </ImageView>
-      <TextField fx:id="pma" layoutX="263.0" layoutY="140.0" prefHeight="49.0" prefWidth="263.0" promptText="cilindrada" style="-fx-background-color: #404040;" text="pma" />
-      <TextField fx:id="matricula" layoutX="263.0" layoutY="224.0" prefHeight="49.0" prefWidth="263.0" promptText="matricula" style="-fx-background-color: #404040;" />
-      <TextField fx:id="marca" layoutX="263.0" layoutY="309.0" prefHeight="49.0" prefWidth="263.0" promptText="marca" style="-fx-background-color: #404040;" />
-      <Button layoutX="269.0" layoutY="401.0" mnemonicParsing="false" onAction="#insertarFurgoneta" prefHeight="43.0" prefWidth="84.0" text="Button" />
-      <TextField fx:id="modelo" layoutX="-4.0" layoutY="309.0" prefHeight="49.0" prefWidth="263.0" promptText="modelo" style="-fx-background-color: #404040;" />
-      <Text fill="#d76767" layoutX="414.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="turismo" wrappingWidth="102.39450073242188" />
-      <TextField fx:id="plazas" layoutX="14.0" layoutY="444.0" prefHeight="49.0" prefWidth="263.0" promptText="matricula" style="-fx-background-color: #404040;" text="plazas" />
    </children>
 </Pane>

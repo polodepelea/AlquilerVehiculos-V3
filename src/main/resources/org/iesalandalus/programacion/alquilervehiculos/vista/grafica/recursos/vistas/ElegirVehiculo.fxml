@@ -9,11 +9,6 @@
    <center>
       <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="575.0" prefWidth="697.0" style="-fx-background-color: #1E1E1E;">
          <children>
-            <ImageView fitHeight="49.0" fitWidth="54.0" layoutX="263.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../imagenes/usuario.png" />
-               </image>
-            </ImageView>
             <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="45.0" layoutY="213.0" onMouseClicked="#ventanaAutobus" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../imagenes/autobus-alternativo.png" />
